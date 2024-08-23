@@ -25,7 +25,27 @@
     position: relative; 
     z-index: 100;
 }
+@keyframes events-page-subheading {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.subheading-events{
+    font-size: 20px;
+    color: #272343;
+    animation: events-page-subheading 1s ease-out;
+    opacity: 1;
+    position: relative; 
+    margin-top:100px;
+    margin-bottom:100px;
+}
 .events-container {
+    margin-top:50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,7 +55,8 @@
     background:#bae8e8;
     width: 300px;
   padding: 20px;
-  margin: 20px;
+  margin-top:20px;
+  margin-left: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
