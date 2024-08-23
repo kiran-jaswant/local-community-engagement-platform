@@ -10,7 +10,7 @@ function Homecards() {
             events.map((event,index)=>{
                 const{name,icon}=event
                 return(
-                    <div className='w-72 border-4 rounded-lg'>
+                    <div className=' border-4 rounded-lg flex justify-center flex-row'>
                         <img src={icon}></img>
                         <h3>{name}</h3>
                         
