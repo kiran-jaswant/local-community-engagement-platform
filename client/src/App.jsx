@@ -5,7 +5,7 @@ import Home from './views/Home/Home'
 import About from './views/About/About'
 import Review from './views/Review/Review'
 import Login from './views/Login/Login'
-import discussionforum from './views/discussionforum/discuss'
+import Discussionforum from './views/Discussionforum/discuss'
 
 
 
@@ -29,7 +29,7 @@ function App() {
     },
     {
       path:"/discussiomforum",
-      element:<discussionforum></discussionforum>
+      element:<Discussionforum></Discussionforum>
     }
   ])
   
