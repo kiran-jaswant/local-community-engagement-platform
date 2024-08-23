@@ -28,7 +28,6 @@ function App() {
       path:"/events",
       element:<Events></Events>
     },
-
   ])
   
 
