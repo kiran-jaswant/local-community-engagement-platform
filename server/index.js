@@ -27,5 +27,6 @@ app.get("/health", (req, res) => {
       data: null,
     });
   });
+  app.post('/login', postLogin)
 
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
