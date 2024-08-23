@@ -7,7 +7,7 @@ import Review from './views/Review/Review'
 import Login from './views/Login/Login'
 
 
-import './App.css'
+
 
 function App() {
   const router =createBrowserRouter([
