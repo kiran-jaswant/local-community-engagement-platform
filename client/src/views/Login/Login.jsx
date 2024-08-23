@@ -1,14 +1,21 @@
 import login from './community.png';
-  import React, { useState } from 'react';
+  import React, { useState,useRef} from 'react';
   import { Link } from 'react-router-dom';
   import axios from 'axios';
   import toast, { Toaster } from 'react-hot-toast';
   import './Login.css'
+  import { gsap } from "gsap";
   
   function Login() {
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
-  
+      const Appl=(()=>{
+        gsap.to(".login",{
+          x:2,
+          duration:2,
+          delay:1
+        })
+      })
       const loginNow = async (e) => {
           e.preventDefault();
           try {
@@ -33,14 +40,16 @@ import login from './community.png';
               toast.error(error.message);
           }
       };
+
+
   
       return (
         <div>
-          <div >
-         <h1 style={{fontSize:'50px', color: '#272343',  fontWeight:'bold'}}>WELCOME</h1>
+        <div className='page'>
+         <h1 className='welcome'>WELCOME</h1>
              <div className='container-login' style={{display:'flex', justifyContent:'space-evenly'}}>
            
-            <img src={login} style={{}}/>
+            <img src={login} ref={Appl} className='login'/>
               
               <div className='signup-login-form' style={{  }}>
               <h1 className='signup-login-heading'>USER LOGIN</h1>
