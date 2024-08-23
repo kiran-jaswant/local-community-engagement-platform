@@ -25,6 +25,9 @@ function App() {
       element:<Login></Login>
     },
     {
+      path:"/events",
+      element:<Events></Events>
+    },
 
   ])
   
