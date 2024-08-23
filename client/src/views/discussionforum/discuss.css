@@ -1,0 +1,24 @@
+.announcements{
+    height: 100%;
+    background-color: #e3f6f5;
+    width: 40%;
+    padding: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+
+}
+.chat{
+    height: 100%;
+    background-color: beige;
+    width: 60%;
+    padding: 10px;
+}
+.inp{
+    position: relative;
+    bottom: 5px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+}
