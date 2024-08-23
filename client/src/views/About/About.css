@@ -5,7 +5,7 @@
     top:20px;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: sticky;
 }
 .container{
 display: flex;
