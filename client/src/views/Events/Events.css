@@ -17,7 +17,7 @@
     font-size:50px; 
     color: #272343; 
     font-weight:bold;
-    margin-top:200px;
+    margin-top:300px;
     margin-left:600px;
     margin-bottom:10px;
     animation: events-page-heading 1s ease-out;
@@ -26,6 +26,7 @@
     z-index: 100;
 }
 .events-container {
+    margin-top:50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,7 +36,8 @@
     background:#bae8e8;
     width: 300px;
   padding: 20px;
-  margin: 20px;
+  margin-top:20px;
+  margin-left: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
