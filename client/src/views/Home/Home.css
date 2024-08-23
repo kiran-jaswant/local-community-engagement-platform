@@ -17,5 +17,9 @@
 }
 .text{
     position: relative;
-    
+
+}
+.front{
+    position: relative;
+    left:1100px;
 }

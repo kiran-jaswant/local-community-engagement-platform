@@ -5,9 +5,6 @@ import Home from './views/Home/Home'
 import About from './views/About/About'
 import Review from './views/Review/Review'
 import Login from './views/Login/Login'
-import Discussionforum from './views/Discussionforum/discuss'
-
-
 
 function App() {
   const router =createBrowserRouter([
@@ -28,9 +25,9 @@ function App() {
       element:<Login></Login>
     },
     {
-      path:"/discussiomforum",
-      element:<Discussionforum></Discussionforum>
-    }
+      path:"/events",
+      element:<Events></Events>
+    },
   ])
   
 
