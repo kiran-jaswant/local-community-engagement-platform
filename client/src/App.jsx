@@ -5,6 +5,7 @@ import Home from './views/Home/Home'
 import About from './views/About/About'
 import Review from './views/Review/Review'
 import Login from './views/Login/Login'
+import Signup from './views/Signup/Signup'
 
 
 
@@ -26,6 +27,10 @@ function App() {
     {
       path:"/login",
       element:<Login></Login>
+    },
+    {
+      path:"/signup",
+      element:<Signup></Signup>
     }
   ])
   

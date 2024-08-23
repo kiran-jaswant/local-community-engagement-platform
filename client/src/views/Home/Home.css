@@ -1,3 +1,17 @@
 .main{
     background: #ffffff; 
 }
+.mybtn{
+    position: relative;
+    bottom:640px;
+    
+}
+
+.bg-img{
+    height:680px;
+
+}
+.heading{
+    position: relative;
+    bottom:630px;
+}
