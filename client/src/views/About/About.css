@@ -1,0 +1,8 @@
+.main-heading{
+    color: #272343;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:fixed;
+    top:20px;
+    width: 100%;
+    text-align: center;
+}
