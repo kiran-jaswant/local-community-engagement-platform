@@ -7,8 +7,6 @@ import Review from './views/Review/Review'
 import Login from './views/Login/Login'
 
 
-
-
 function App() {
   const router =createBrowserRouter([
     {
@@ -26,7 +24,12 @@ function App() {
     {
       path:"/login",
       element:<Login></Login>
-    }
+    },
+   /* {
+      path:"/signup",
+      element:<Signup></Signup>
+    },
+    */
   ])
   
 
