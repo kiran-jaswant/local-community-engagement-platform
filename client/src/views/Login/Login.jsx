@@ -1,4 +1,4 @@
-import login from './community.jpg';
+import login from './community.png';
   import React, { useState } from 'react';
   import { Link } from 'react-router-dom';
   import axios from 'axios';
@@ -35,26 +35,25 @@ import login from './community.jpg';
       };
   
       return (
-          <div style={{background: '#bae8e8'}}>
-        
-             <div className='container-login' style={{display:'flex', justifyContent:'space-around'}}>
-            <h1 style={{fontSize:'50px'}}>WELCOME</h1>
-            <img src={login}/>
+        <div>
+          <div >
+         <h1 style={{fontSize:'50px', color: '#272343',  fontWeight:'bold'}}>WELCOME</h1>
+             <div className='container-login' style={{display:'flex', justifyContent:'space-evenly'}}>
+           
+            <img src={login} style={{}}/>
               
               <div className='signup-login-form' style={{  }}>
               <h1 className='signup-login-heading'>USER LOGIN</h1>
-              <h3>Email Address</h3>
+              <h3 className="text-balance ... bg-transparent text-green-50" style={{marginTop:'20px', color:'#8c8c90', fontSize:'18px'}}>Email Address</h3>
                   <input
                       type='email'
-                      placeholder='Email'
                       className='user-input'
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                   />
-                  <h3 style={{marginTop:'20px'}}>Password</h3>
+                  <h3 className="text-balance ... bg-transparent text-green-50" style={{marginTop:'20px', color:'#8c8c90', fontSize:'18px'}}>Password</h3>
                   <input
                       type='password'
-                      placeholder='Password'
                       className='user-input'
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
@@ -64,6 +63,7 @@ import login from './community.jpg';
               </div>
               <Link to='/signup' className="signup-login-link"> Don't have an account? SIGNUP</Link>
               <Toaster />
+          </div>
           </div>
       );
   }
