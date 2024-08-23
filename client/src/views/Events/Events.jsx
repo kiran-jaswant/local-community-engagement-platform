@@ -25,28 +25,28 @@ const Events = () => {
           <p>Location: Downtown Area</p>
         </div>
         <div className="event-card">
-        <img src={summerfestival}/>
+        <img src={food}/>
           <h2>Event 3: Food Drive</h2>
           <p>Date: September 17th</p>
           <p>Time: 10am - 2pm</p>
           <p>Location: Community Center</p>
         </div>
         <div className="event-card">
-        <img src={summerfestival}/>
+        <img src={fitness}/>
           <h2>Event 4: Fitness Challenges</h2>
           <p>Date: September 24th</p>
           <p>Time: 10am - 2pm</p>
           <p>Location: Community Center</p>
         </div>  
         <div className="event-card">
-        <img src={summerfestival}/>
+        <img src={fitness}/>
           <h2>Event 5: Cycling Challenges</h2>
           <p>Date: September 30th</p>
           <p>Time: 10am - 2pm</p>
           <p>Location: Community Center</p>
         </div>
         <div className="event-card">
-        <img src={summerfestival}/>
+        <img src={fitness}/>
           <h2>Event 6:Dance Fitness Parties</h2>
           <p>Date: October 15th</p>
           <p>Time: 10am - 2pm</p>

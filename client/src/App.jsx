@@ -29,11 +29,7 @@ function App() {
       path:"/events",
       element:<Events></Events>
     },
-   /* {
-      path:"/signup",
-      element:<Signup></Signup>
-    },
-    */
+    
   ])
   
 
