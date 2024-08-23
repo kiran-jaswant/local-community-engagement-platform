@@ -1,28 +1,16 @@
-import React from 'react'
-import './Homecards.css'
-import { events } from '../../config/Event/events'
+import React from 'react';
+import './Homecards.css';
 
-function Homecards() {
-    
+function Homecards(props) {
+  const { name, icon } = props;
+
   return (
-    <div>
-        {
-            events.map((event,index)=>{
-                const{name,icon}=event
-                return(
-                    <div className=' border-4 rounded-lg flex justify-center flex-row'>
-                        <img src={icon}></img>
-                        <h3>{name}</h3>
-                        
-
-                    </div>
-
-                )
-            })
-        }
-      
+    <div className='card'>
+      <img src={icon} alt={name} className='card-image' />
+      <h2 className='card-title'>{name}</h2>
     </div>
-  )
+  );
 }
 
-export default Homecards
+export default Homecards;
+
