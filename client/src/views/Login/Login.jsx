@@ -6,6 +6,7 @@ import login from './community.png';
   import './Login.css'
   import { gsap } from "gsap";
   
+  
   function Login() {
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
@@ -46,6 +47,7 @@ import login from './community.png';
       return (
         <div>
         <div className='page'>
+
          <h1 className='welcome'>WELCOME</h1>
              <div className='container-login' style={{display:'flex', justifyContent:'space-evenly'}}>
            

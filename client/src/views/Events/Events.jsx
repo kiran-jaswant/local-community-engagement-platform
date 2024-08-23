@@ -4,9 +4,12 @@ import summerfestival from './images/summer.avif'
 import charity from './images/charity.avif'
 import food from './images/food.avif'
 import fitness from './images/fitness.avif'
+import { useState } from 'react';
+import Navbar from './../../components/Navbar/Navbar'
 const Events = () => {
   return (
     <div className="events-page">
+    <Navbar />
       <h1 className="events-page-heading">Community Events</h1>
       <div className="events-container">
         <div className="event-card">
@@ -53,6 +56,7 @@ const Events = () => {
           <p>Location: Community Center</p>
         </div>
       </div>
+     
     </div>
   );
 };
