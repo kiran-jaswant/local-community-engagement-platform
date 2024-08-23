@@ -5,7 +5,7 @@ import Home from './views/Home/Home'
 import About from './views/About/About'
 import Review from './views/Review/Review'
 import Login from './views/Login/Login'
-
+import discussionforum from './views/discussionforum/discuss'
 
 
 
@@ -26,6 +26,10 @@ function App() {
     {
       path:"/login",
       element:<Login></Login>
+    },
+    {
+      path:"/discussiomforum",
+      element:<discussionforum></discussionforum>
     }
   ])
   

@@ -1,7 +1,7 @@
 import movie from "./Images/movie.jpeg"
 import concert from './Images/concert.png'
 import yoga from './Images/yoga.png'
-import plant from 'Images/plant.jpeg'
+import plant from './Images/plant.jpeg'
 const events=[
     {
         name:"Movie Nights",

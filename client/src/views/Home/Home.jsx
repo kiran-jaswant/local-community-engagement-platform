@@ -9,7 +9,7 @@ import Homecards from '../../components/Homecards/Homecards'
 function Home() {
   return (
     <div className=''>
-        <div>
+        <div className='mt-24'>
         <img src={bgimg} className='w-screen bg-img'></img>
         <div className='bg-white rounded-2xl shadow-black shadow-sm w-48 p-3 mybtn m-10'>
             <h6 className='text-gray-950 text-center'>Join the community</h6>
@@ -21,6 +21,7 @@ function Home() {
         </p>
         </div>
         <div>
+            <Homecards></Homecards>
 
         </div>
         
