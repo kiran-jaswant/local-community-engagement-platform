@@ -5,6 +5,7 @@ import joinus from "./images/deal.png"
 import work from "./images/work.png"
 import mission from "./images/mission.png"
 import value from "./images/reanem.png"
+import Footer from "../../components/footer/footer.jsx"
 
 function About() {
   return (
@@ -83,7 +84,9 @@ The NeighbourNet Connect Team
 </div>
       </div>
       </div>
+      <Footer/>
     </div>
+
   )
 }
 
