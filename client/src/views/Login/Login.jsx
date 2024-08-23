@@ -3,6 +3,7 @@ import login from './community.jpg';
   import { Link } from 'react-router-dom';
   import axios from 'axios';
   import toast, { Toaster } from 'react-hot-toast';
+  import './Login.css'
   
   function Login() {
       const [email, setEmail] = useState('');
@@ -34,14 +35,15 @@ import login from './community.jpg';
       };
   
       return (
-          <div>
-             <h1 className='signup-login-heading'>USER LOGIN</h1>
-             <div className='container-login'>
-            <div>
+          <div style={{background: '#bae8e8'}}>
+        
+             <div className='container-login' style={{display:'flex', justifyContent:'space-around'}}>
+            <h1 style={{fontSize:'50px'}}>WELCOME</h1>
             <img src={login}/>
-            </div>
-             
-              <div className='signup-login-form' style={{ backgroundColor: '#8EC5FC' }}>
+              
+              <div className='signup-login-form' style={{  }}>
+              <h1 className='signup-login-heading'>USER LOGIN</h1>
+              <h3>Email Address</h3>
                   <input
                       type='email'
                       placeholder='Email'
@@ -49,6 +51,7 @@ import login from './community.jpg';
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                   />
+                  <h3 style={{marginTop:'20px'}}>Password</h3>
                   <input
                       type='password'
                       placeholder='Password'
