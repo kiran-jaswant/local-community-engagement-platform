@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./discuss.css";
-import img from "./announcement.png"
+import img from "./announcement.png";
+import Footer from "../../components/footer/footer";
+import "../../components/footer/footer.css"
 
 function Discus() {
     const [inputValue, setInputValue] = useState("");
     const [messages, setMessages] = useState([]);
+
     useEffect(() => {
         try {
             const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
@@ -14,6 +17,7 @@ function Discus() {
             console.error("Error loading messages from localStorage:", error);
         }
     }, []);
+
     useEffect(() => {
         try {
             console.log("Saving messages to localStorage:", messages);
@@ -22,6 +26,7 @@ function Discus() {
             console.error("Error saving messages to localStorage:", error);
         }
     }, [messages]);
+
     const addChat = () => {
         if (inputValue.trim() === "") return;
 
@@ -40,12 +45,14 @@ function Discus() {
             <div className="main">
                 <div className="announcements">
                     <h3 className="h3">ANNOUNCEMENTS</h3>
-                    <img src={img} alt="" className="announcement-img"/>
-                    <div className="infocard">Date:25/08/24 -  Janmashthami</div>
+                    <img src={img} alt="Announcement" className="announcement-img" />
+                    <div className="infocard">Date: 25/08/24 - Janmashthami</div>
                     <div className="infocard">Note: Water supply will be off for 2 hours.</div>
                     <div className="infocard">Note: Water supply will be off for 2 hours.</div>
                 </div>
+
                 <div className="chat">
+
                     <div className="messages">
                         {messages.map((msg, index) => (
                             <div key={index} className="message">
@@ -53,18 +60,19 @@ function Discus() {
                             </div>
                         ))}
                     </div>
-                    <div>
-                    <input
-                        type="text"
-                        placeholder="Type your message"
-                        value={inputValue}
-                        onChange={(e) => setInputValue(e.target.value)}
-                        className="inp"
-                    />
-                    <button className="btn" onClick={addChat}>Send</button>
+                    <div className="chat-input">
+                        <input
+                            type="text"
+                            placeholder="Type your message"
+                            value={inputValue}
+                            onChange={(e) => setInputValue(e.target.value)}
+                            className="inp"
+                        />
+                        <button className="btn" onClick={addChat}>Send</button>
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

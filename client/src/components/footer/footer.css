@@ -1,0 +1,50 @@
+.footer {
+    background-color:  #272343;
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+    margin-top: 50px;
+    width: 1520px;
+    color:white;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.footer-content {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.footer-text {
+    margin: 5px 0;
+}
+.logo-img{
+    background-color: white;
+}
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
