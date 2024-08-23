@@ -28,11 +28,6 @@ function App() {
       path:"/events",
       element:<Events></Events>
     },
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> fe7aa17184052d779b5b18d385844b18f9ab6b5e
   ])
   
 
