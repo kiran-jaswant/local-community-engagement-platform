@@ -3,6 +3,7 @@ import './Home.css'
 import bgimg from './bg.jpg'
 import front from './front.jpg'
 import Homecards from '../../components/Homecards/Homecards'
+import { events } from '../../config/Event/events'
 
 
 
@@ -24,19 +25,25 @@ function Home() {
                     </p>
 
                 </div>
-                
-
-
-
-
             </div>
             <div>
-                    <img src={front} className='mt-20  h-96 rounded-full object-cover front w-96 shadow-md '>
-                    </img>
+                <img src={front} className='mt-20  h-96 rounded-full object-cover front w-96 shadow-md '>
+                </img>
+            </div>
+           <div className='flex flex-wrap'>
+            {
+                events.map((event,index)=>{
+                    const{name,icon}=event
+                    return(
+                        
+                        <Homecards name={name} icon={icon} index={index}></Homecards>  
+    
+                    )
+                })
 
-
-                </div>
-                <Homecards></Homecards>
+                 
+            }
+           </div>
         </>
 
 
