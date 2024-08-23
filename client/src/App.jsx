@@ -5,7 +5,6 @@ import Home from './views/Home/Home'
 import About from './views/About/About'
 import Review from './views/Review/Review'
 import Login from './views/Login/Login'
-import Events from './views/Events/Events.jsx'
 
 function App() {
   const router =createBrowserRouter([
@@ -29,7 +28,11 @@ function App() {
       path:"/events",
       element:<Events></Events>
     },
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fe7aa17184052d779b5b18d385844b18f9ab6b5e
   ])
   
 
