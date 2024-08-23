@@ -4,8 +4,8 @@ import './Home.css'
 
 function Home() {
   return (
-    <div>
-      <h1 className='bg-slate-300'>Home</h1>
+    <div className=''>
+      <h1 className=''>Home</h1>
     </div>
   )
 }
