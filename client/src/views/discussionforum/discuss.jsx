@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./discuss.css";
+import img from "./announcement.png"
 
 function Discus() {
     const [inputValue, setInputValue] = useState("");
@@ -38,8 +39,9 @@ function Discus() {
             <h1>Discussion Forum</h1>
             <div className="main">
                 <div className="announcements">
-                    <h3>ANNOUNCEMENTS</h3>
-                    <div className="infocard">Note: Water supply will be off for 2 hours.</div>
+                    <h3 className="h3">ANNOUNCEMENTS</h3>
+                    <img src={img} alt="" className="announcement-img"/>
+                    <div className="infocard">Date:25/08/24 -  Janmashthami</div>
                     <div className="infocard">Note: Water supply will be off for 2 hours.</div>
                     <div className="infocard">Note: Water supply will be off for 2 hours.</div>
                 </div>
